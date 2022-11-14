@@ -3,21 +3,44 @@ import '../styles/components/about.css';
 import { AboutCircle } from './AboutCircle';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { SwitchTransition, CSSTransition } from 'react-transition-group';
+
+const arrayOfPhrases = [
+    'Hagas lo que hagas, todo es mejor con un sitio o aplicación', 
+    'Diseñamos sistemas a tu medida', 
+    'Generamos valor aplicando nuestra expertise en estas áreas'
+];
 
 export const About = () => {
 
+    const [index, setIndex] = useState(0);
+
     useEffect(() => {
-        Aos.init({ duration: 1500 })
+        Aos.init({ duration: 1500 });
+    }, []);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((currentValue) => {
+                if (currentValue + 1 === arrayOfPhrases.length) return 0;
+                return currentValue + 1;
+            });
+        }, 5000);
+
+        return () => clearInterval(interval);
     }, []);
 
     return (
         <section id="about">
             <div className="about" id="about">
                 <h1 className="about-title" data-aos="fade-down">Boren Development</h1>
-                <h2 className="about-subtitle" data-aos="fade-down">
-                    Hagas lo que hagas, todo es mejor con un sitio o aplicación web &nbsp; 🖥️
-                </h2>
-
+                <SwitchTransition>
+                    <CSSTransition classNames="fade" key={ arrayOfPhrases[index] } addEndListener={ (node, done) => node.addEventListener('transitionend', done, false) }>
+                        <h2 className="about-subtitle">
+                            {arrayOfPhrases[index]}
+                        </h2>
+                    </CSSTransition>
+                </SwitchTransition>    
                 <div className="about-circles">
                     <AboutCircle 
                         text="Brindamos soluciones tecnológicas de alta calidad." 
