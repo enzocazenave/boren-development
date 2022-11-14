@@ -1,0 +1,24 @@
+@media (max-width: 1440px) {
+    .about-title {
+        font-size: 35px;
+    }
+    .about-subtitle {
+        font-size: 22px;
+    }
+    .about-circle {
+        margin: 60px;
+    }
+    .about-circle_container {
+        height: 200px;
+    }
+    .about-circle_circunference {
+        width: 150px;
+        height: 150px;
+    }
+    .about-circle_circunference > i {
+        font-size: 50px;
+    }
+    .about-circle_text {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,39 @@
+@import './styles/root.css';
+
+* {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1.5px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--black);
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-enter-active {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+}
+
+.fade-enter-active, .fade-exit-active {
+    transition: opacity 500ms;
+}
+
+.particles-change {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
