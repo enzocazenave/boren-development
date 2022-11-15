@@ -16,7 +16,7 @@ export const Header = () => {
             <ul className="header-nav">
                 <li className="header-nav_li"><a id="about-item" className="header-nav_li--a header-nav_li--a__selected" href="#about">¿Quienes somos?</a></li>
                 <li className="header-nav_li"><a id="services-item" className="header-nav_li--a" href="#services">Servicios</a></li>
-                <li className="header-nav_li"><a id="clients-item" className="header-nav_li--a" href="#">Clientes</a></li>
+                <li className="header-nav_li"><a id="clients-item" className="header-nav_li--a" href="#clients">Clientes</a></li>
                 <li className="header-nav_li"><a id="contact-item" className="header-nav_li--a" href="#">Contacto</a></li>
             </ul>
         </header>

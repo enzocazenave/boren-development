@@ -7,7 +7,7 @@ import { CardService } from './CardService';
 export const Services = () => {
 
     useEffect(() => {
-        Aos.init({ duration: 1000 });
+        Aos.init({ duration: 2000 });
     }, []);
 
     return (
@@ -18,7 +18,7 @@ export const Services = () => {
                 <div className="services-bar"></div>
             </div>
 
-            <div data-aos="fade-up" className="cards">
+            <div className="cards" data-aos="fade-up">
                 <CardService
                     title="Landing Page"  
                     price="250.000"

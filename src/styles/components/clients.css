@@ -1,0 +1,33 @@
+.clients {
+    background: linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)), url("https://www.cronista.com/files/image/346/346846/61110d802909c.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    border-radius: 2em;
+    border: 2px solid var(--violet);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 24em;
+    justify-content: center;
+    margin: 0 auto 7em auto;
+    width: 84%;
+}
+
+.clients-title {
+    color: var(--white);
+    font-size: 2.5em;
+}
+
+.clients-text {
+   color: var(--white-darker);
+   text-align: center;
+   font-size: 1.3em;
+   padding: 0 50px;
+}
+
+.clients-span {
+    color: var(--white);
+    font-weight: 600;
+}

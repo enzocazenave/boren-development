@@ -48,7 +48,6 @@
     box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.137);
     margin-top: -15px;
     cursor: pointer;
-
 }
 
 .card-image {
@@ -67,15 +66,14 @@
 
 .card-title {
     color: var(--white);
-    font-weight: 500;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .card-price {
     color: var(--violet-price);
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .card-text {

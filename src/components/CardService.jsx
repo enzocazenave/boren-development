@@ -1,15 +1,6 @@
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
-
-export const CardService = (props) => {
-
-    useEffect(() => {
-        Aos.init({ duration: 2000 });
-    }, []);
- 
+export const CardService = (props) => { 
     return (
-        <div className="card" data-aos="fade-in">
+        <div className="card">
             <img className="card-image" src={ props.image } />
 
             <div className="card-container">
