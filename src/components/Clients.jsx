@@ -10,7 +10,7 @@ export const Clients = () => {
     }, []);
 
     return (
-        <div data-aos="fade-up" className="clients" id="clients">
+        <section data-aos="fade-up" className="clients" id="clients">
             <h1 className="clients-title">Clientes</h1>
             <p className="clients-text">
                 <span className="clients-span">Boren Development</span> tiene entre sus principales clientes a medianas y grandes
@@ -20,6 +20,6 @@ export const Clients = () => {
                 garantizando a nuestros clientes un servicio integral acorde 
                 a sus necesidades.
             </p>
-        </div>
+        </section>
     )
 }

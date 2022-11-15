@@ -2,7 +2,7 @@ import '../styles/components/contact.css';
 
 export const Contact = () => {
     return (
-        <div className="contact">
+        <section className="contact" id="contact">
             <div className="contact-maincontainer">
                 <div className="contact-container">
                     <div className="contact-box">
@@ -32,6 +32,6 @@ export const Contact = () => {
                     <button type="button">Enviar consulta</button>
                 </form>
             </div>
-        </div>
+        </section>
     )
 }
